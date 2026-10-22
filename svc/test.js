@@ -1,4 +1,4 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const minimist = require("minimist");
-test("flags parse", () => assert.deepStrictEqual(minimist(["--a", "1"]).a, 1));
+const yaml = require("js-yaml");
+test("loads yaml", () => assert.deepStrictEqual(yaml.safeLoad("a: 1"), { a: 1 }));

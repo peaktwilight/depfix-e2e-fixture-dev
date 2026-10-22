@@ -3,5 +3,5 @@
   "version": "1.0.0",
   "private": true,
   "scripts": { "test": "node --test --test-reporter=tap test.js" },
-  "dependencies": { "minimist": "1.2.0" }
+  "dependencies": { "js-yaml": "3.13.0" }
 }
