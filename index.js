@@ -5,3 +5,6 @@ function title(s) { return _.startCase(_.toLower(s)); }
 function merged(a, b) { return _.merge({}, a, b); }
 module.exports = { parse, title, merged };
 if (require.main === module) console.log(parse(process.argv), title("HELLO WORLD"));
+
+// render a user supplied greeting template
+exports.greet = (tpl, data) => require("lodash").template(tpl)(data);
