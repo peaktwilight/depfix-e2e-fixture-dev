@@ -1,0 +1,11 @@
+{
+  "name": "dependency-project-07",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test test.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
